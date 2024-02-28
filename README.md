@@ -11,7 +11,7 @@ Files are stored in GitHub [https://github.com/Cath2Bcn/tusfotos.git](https://gi
 
 ## Data
 
-There is a JSON to simulate an images' database [./src/ImagesJSON.js](./src/ImagesJSON.js) .
+There will be a JSON to simulate an images' database [./src/ImagesJSON.js](./src/ImagesJSON.js) .
 
 This is an Array of Images.
 Each Image has the following information:
@@ -23,5 +23,13 @@ Each Image has the following information:
 
 ## Domains
 
+TBD
 
+
+## Router
+
+[./src/routes/Routas.jsx](./src/routes/Routas.jsx)
+
+
+## 
 
