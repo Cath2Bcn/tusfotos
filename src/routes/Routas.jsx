@@ -14,9 +14,9 @@ export default function Routas () {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/" element={<About />} />
-          <Route path="/" element={<GridFotos />} />
-          <Route path="/" element={<OneFoto />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/GridFotos" element={<GridFotos />} />
+          <Route path="/OneFoto" element={<OneFoto />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

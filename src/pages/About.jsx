@@ -1,6 +1,6 @@
 import "w3-css/w3.css";
 
-export default function About () {
+export default function About() {
     return(
         <>
             <div class="w3-content">

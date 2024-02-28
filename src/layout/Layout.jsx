@@ -1,7 +1,8 @@
 import Footer from './Footer.jsx'
 import Header from "./Header.jsx";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "w3-css/w3.css";
+
 
 export default function Layout(){
 
@@ -12,22 +13,45 @@ export default function Layout(){
           class="w3-bar w3-white w3-padding w3-card"
           style={{ letterSpacing: "4px" }}
           >
+          {/* <img 
+            src="https://www.w3schools.com/w3images/rock.jpg" 
+            style={{ height: "100%" }}
+          /> */}
           <Link class="w3-bar-item w3-button" to="/">
             Home
           </Link>
-          <Link class="w3-bar-item w3-button" to="/">
+          <Link class="w3-bar-item w3-button" to="/GridFotos">
+            Grid
+          </Link>
+          <Link class="w3-bar-item w3-button" to="/OneFoto">
+            Simple
+          </Link>
+          <Link class="w3-bar-item w3-button" to="/About">
             About
           </Link>
         </div>
       </nav> 
 
+      <nav 
+          class="w3-bar w3-white w3-padding w3-card"
+          style={{ letterSpacing: "4px" }}
+          >
+          <Link class="w3-bar-item w3-button" to="/">
+            By Date
+          </Link>
+          <Link class="w3-bar-item w3-button" to="/">
+            By Hashtag
+          </Link>
+      </nav> 
+
+      {/* body */}
       <div class="w3-content" style={{ maxWidth:"1500px" }}>
 
         <div>
           <Header class="w3-container" />
         </div>
 
-        <div className="w3-row" id="myGrid" style={{ marginBottom: "128px" }}>
+        {/* <div className="w3-row" id="myGrid" style={{ marginBottom: "128px" }}>
           <div class="w3-third">
             <img src="https://www.w3schools.com/w3images/rocks.jpg" style={{ width: "100%" }}/>
             <img src="https://www.w3schools.com/w3images/sound.jpg" style={{ width: "100%" }}/>
@@ -54,9 +78,13 @@ export default function Layout(){
             <img src="https://www.w3schools.com/w3images/lights.jpg" style={{ width: "100%" }}/>
             <img src="https://www.w3schools.com/w3images/workshop.jpg" style={{ width: "100%" }}/>
           </div>
-        </div>
+        </div> */}
 
-        <div class="w3-bar">
+        <div>
+          <Outlet class="w3-container" />
+        </div>
+        
+        <div>
           <Footer />
         </div>
 
