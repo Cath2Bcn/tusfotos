@@ -1,13 +1,26 @@
 const ImagesJSON = [
 
     {
-      "id": "O783",
+      "id": "0000",
+      "src": "https://www.w3schools.com/w3images/rocks.jpg",
       "date": "05/02/2021",
-      "menus": [
+      "hashtags": [
         {
-          "menu": "Girona",
-          "qty": 1
+          "hash1": "rio",
+          "hash2": "paisaje"
         },
-      }
+      ]
+    },
+    {
+      "id": "1111",
+      "src": "https://www.w3schools.com/w3images/woods.jpg",
+      "date": "25/02/2020",
+      "hashtags": [
+        {
+          "hash1": "paisaje",
+          "hash2": "bosque"
+        },
+      ]
+    },
 
 ]
