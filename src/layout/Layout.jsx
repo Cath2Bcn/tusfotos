@@ -29,6 +29,9 @@ export default function Layout(){
           <Link class="w3-bar-item w3-button" to="/About">
             About
           </Link>
+          <Link class="w3-bar-item w3-button" to="/Data">
+            Data
+          </Link>
         </div>
       </nav> 
 

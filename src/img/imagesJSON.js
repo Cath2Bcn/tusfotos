@@ -1,5 +1,4 @@
-const ImagesJSON = [
-
+const imagesJSON = [
     {
       "id": "0000",
       "src": "https://www.w3schools.com/w3images/rocks.jpg",
