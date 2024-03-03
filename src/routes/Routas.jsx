@@ -6,7 +6,7 @@ import Error from "../pages/Error";
 import About from "../pages/About";
 import GridFotos from "../pages/GridFotos/GridFotos";
 import OneFoto from "../pages/OneFoto/OneFoto";
-import Data from "../pages/Data/Data";
+import Data from "../pages/Data/TableOfData";
 
 
 export default function Routas () {
