@@ -6,7 +6,8 @@ import Error from "../pages/Error";
 import About from "../pages/About";
 import GridFotos from "../pages/GridFotos/GridFotos";
 import OneFoto from "../pages/OneFoto/OneFoto";
-import Data from "../pages/Data/TableOfData";
+import DataList from "../pages/Data/DataList";
+import DataTable from "../pages/Data/DataTable";
 
 
 export default function Routas () {
@@ -18,7 +19,8 @@ export default function Routas () {
           <Route path="/About" element={<About />} />
           <Route path="/GridFotos" element={<GridFotos />} />
           <Route path="/OneFoto" element={<OneFoto />} />
-          <Route path="/Data" element={<Data />} />
+          <Route path="/DataList" element={<DataList />} />
+          <Route path="/DataTable" element={<DataTable />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

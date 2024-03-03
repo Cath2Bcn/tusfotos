@@ -1,7 +1,7 @@
 import "w3-css/w3.css";
 import { imagesJSON } from "./imagesJSON.js";
 
-export default function TableOfData() {
+export default function DataList() {
   const renderData = imagesJSON.map ( (image) => (
     <>
       <div class="w3-card-4" style={{ width: "50%" }}>
