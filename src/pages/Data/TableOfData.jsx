@@ -22,7 +22,7 @@ export default function TableOfData() {
     </>
   ));
 
-  //console.log(imagesJSON);
+
   console.log("renderdata", renderData);
 
 
