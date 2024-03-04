@@ -60,7 +60,7 @@ export default function Layout(){
         </div>
         
         <div>
-          <Footer />
+          <Footer class="w3-container" />
         </div>
 
       </div>

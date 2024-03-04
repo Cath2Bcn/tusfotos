@@ -9,19 +9,23 @@ export default function DataList() {
           <h3>Image Id: {image.id}</h3>
         </header>
         <br />
-        <div class="w3-container">Date: {image.date}</div>
-        <div class="w3-container">Src: {image.src}</div>
-        <div class="w3-container">
-          <img 
-          className="avatar"
-          src={image.src}
-          alt={image.src}
-          width={100}
-          />
+        <div className="w3-container">
+          <div className="w3-twothird">
+            <div class="w3-container">Date: {image.date}<br/><br/></div>
+            <div class="w3-container">Source file: {image.src} <br/><br/></div>
+            <div class="w3-container">Hashtags:<br/>
+            {image.hashtags.map ( (hashtag) => ( <><span>- {hashtag.hashtag}</span><br/></>))  }</div>
+            <br />
+          </div>
+          <div class="w3-third">
+              <img 
+                className="w3-container"
+                src={image.src}
+                alt={image.src}
+                width={200}
+              />
+          </div>
         </div>
-        <div class="w3-container">Hashtags:<br/>
-         {image.hashtags.map ( (hashtag) => ( <><span>{hashtag.hashtag}</span><br/></>))  }</div>
-        <br />
       </div>
       <br />
     </>
