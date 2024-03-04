@@ -25,14 +25,14 @@ export default function Layout(){
           <Link class="w3-bar-item w3-button" to="/OneFoto">
             <br/>Simple<br/><br/>
           </Link>
-          <Link class="w3-bar-item w3-button" to="/About">
-            <br/>About<br/><br/>
-          </Link>
           <Link class="w3-bar-item w3-button" to="/DataList">
             <br/>List<br/><br/>
           </Link>
           <Link class="w3-bar-item w3-button" to="/DataTable">
             <br/>Table<br/><br/>
+          </Link>
+          <Link class="w3-bar-item w3-button" to="/About">
+            <br/>About<br/><br/>
           </Link>
         </div>
       </nav> 
