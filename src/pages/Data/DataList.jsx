@@ -1,7 +1,7 @@
 import "w3-css/w3.css";
 import { imagesJSON } from "./imagesJSON.js";
 
-export default function TableOfData() {
+export default function DataList() {
   const renderData = imagesJSON.map ( (image) => (
     <>
       <div class="w3-card-4" style={{ width: "50%" }}>
@@ -11,19 +11,24 @@ export default function TableOfData() {
         <br />
         <div class="w3-container">Date: {image.date}</div>
         <div class="w3-container">Src: {image.src}</div>
+        <div class="w3-container">
+          <img 
+          className="avatar"
+          src={image.src}
+          alt={image.src}
+          width={100}
+          />
+        </div>
         <div class="w3-container">Hashtags:<br/>
-         {image.hashtags.map ( (hashtag) => ( <><span>{hashtag.hashtag}</span></>))  }</div>
+         {image.hashtags.map ( (hashtag) => ( <><span>{hashtag.hashtag}</span><br/></>))  }</div>
         <br />
-        <footer class="w3-container w3-black">
-          <h5>Footer Image</h5>
-        </footer>
       </div>
       <br />
     </>
   ));
 
 
-  console.log("renderdata", renderData);
+  //console.log("renderdata", renderData);
 
 
   return (
