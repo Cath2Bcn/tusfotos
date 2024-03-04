@@ -1,5 +1,5 @@
 import "w3-css/w3.css";
-import { imagesJSON } from "./imagesJSON.js";
+import { imagesJSON } from "../../Data/imagesJSON.js";
 
 export default function DataList() {
   const renderData = imagesJSON.map ( (image) => (

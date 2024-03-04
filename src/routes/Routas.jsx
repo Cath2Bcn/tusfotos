@@ -1,13 +1,13 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../layout/Layout";
-import Home from "../pages/Home";
+import Home from "../pages/Home/Home";
 import Error from "../pages/Error";
 import About from "../pages/About";
 import GridFotos from "../pages/GridFotos/GridFotos";
 import OneFoto from "../pages/OneFoto/OneFoto";
-import DataList from "../pages/Data/DataList";
-import DataTable from "../pages/Data/DataTable";
+import DataList from "../pages/ListFotos/DataList";
+import DataTable from "../pages/TableFotos/DataTable";
 
 
 export default function Routas () {
