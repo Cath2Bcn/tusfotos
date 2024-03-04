@@ -17,6 +17,6 @@ export const imagesJSON = [
         {"hashtag": "paisaje"},
         {"hashtag": "bosque"}
       ]
-    }
+    },
 
 ]

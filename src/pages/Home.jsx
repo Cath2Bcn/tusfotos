@@ -3,7 +3,7 @@ import "w3-css/w3.css";
 export default function Home() {
 
     function handleOnClick() {
-      // selecting fotos
+      // validating criteria
     }
 
     return (

@@ -13,32 +13,31 @@ export default function Layout(){
           class="w3-bar w3-white w3-padding w3-card"
           style={{ letterSpacing: "4px" }}
           >
-          {/* <img 
-            src="https://www.w3schools.com/w3images/rock.jpg" 
-            style={{ height: "100%" }}
-          /> */}
           <Link class="w3-bar-item w3-button" to="/">
-            Home
+            <img alt="TF"
+              src="https://www.w3schools.com/w3images/rock.jpg" 
+              height={70}
+            />
           </Link>
           <Link class="w3-bar-item w3-button" to="/GridFotos">
-            Grid
+            <br/>Grid<br/><br/>
           </Link>
           <Link class="w3-bar-item w3-button" to="/OneFoto">
-            Simple
+            <br/>Simple<br/><br/>
           </Link>
           <Link class="w3-bar-item w3-button" to="/About">
-            About
+            <br/>About<br/><br/>
           </Link>
           <Link class="w3-bar-item w3-button" to="/DataList">
-            List
+            <br/>List<br/><br/>
           </Link>
           <Link class="w3-bar-item w3-button" to="/DataTable">
-            Table
+            <br/>Table<br/><br/>
           </Link>
         </div>
       </nav> 
 
-      <nav 
+      {/*  <nav 
           class="w3-bar w3-white w3-padding w3-card"
           style={{ letterSpacing: "4px" }}
           >
@@ -48,11 +47,10 @@ export default function Layout(){
           <Link class="w3-bar-item w3-button" to="/Hashtags">
             By Hashtags
           </Link>
-      </nav> 
+      </nav>  */}
 
       {/* body */}
       <div class="w3-content" style={{ maxWidth:"1500px" }}>
-
         <div>
           <Header class="w3-container" />
         </div>

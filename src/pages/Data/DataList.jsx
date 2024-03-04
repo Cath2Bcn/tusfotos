@@ -4,7 +4,7 @@ import { imagesJSON } from "./imagesJSON.js";
 export default function DataList() {
   const renderData = imagesJSON.map ( (image) => (
     <>
-      <div class="w3-card-4" style={{ width: "50%" }}>
+      <div class="w3-card-4" style={{ width: "100%" }}>
         <header class="w3-container w3-sand">
           <h3>Image Id: {image.id}</h3>
         </header>
