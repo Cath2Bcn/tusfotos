@@ -3,36 +3,46 @@ import { imagesJSON } from "./imagesJSON.js";
 
 export default function DataTable() {
 
- function Table () {
+ const renderData = imagesJSON.map ( (image) => (
     <>
-      <div>
-        <table>
-            <tr>
-                <th>Id</th>
-                <th>Date</th>
-                <th>HashTags</th>
-                <th>Image</th>
-            </tr>
-            {imagesJSON.map ( (image) => {
-                return (
-                    <tr>
-                        <td>{image.id}</td>
-                        <td>{image.date}</td>
-                        <td>{image.hashtags}</td>
-                        <td>{image.src}</td>
-                    </tr>
-                )
-            })}
-        </table>
-      </div>
+      <tr>
+          <td>{image.id}</td>
+          <td>{image.date}</td>
+          <td>
+            {image.hashtags.map((hashtag) => (
+              <>
+                <span>{hashtag.hashtag}</span>
+                <br/>
+              </>
+            ))}
+          </td>
+          <td>{image.src}</td>
+          <td>
+            <img 
+              src={image.src}
+              alt={image.src}
+              width={100}
+            />
+          </td>
+      </tr>
+                
     </>
-    };
+    ));
 
   return (
     <>
       <div class="w3-container">
         <h1>Images Table</h1>
-        <div class="w3-container">{Table}</div>
+        <table class="w3-table w3-bordered w3-hoverable w3-border w3-card">
+          <tr class="w3-sand">
+            <th>Id</th>
+            <th>Date</th>
+            <th>HashTags</th>
+            <th>Origin</th>
+            <th>Image</th>
+          </tr>
+          {renderData}
+        </table>
       </div>
     </>
   );

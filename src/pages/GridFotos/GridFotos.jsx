@@ -3,7 +3,7 @@ export default function GridFotos(){
         <>
         <div className="w3-row" id="myGrid" style={{ marginBottom: "128px" }}>
           <div class="w3-third">
-            {/* <img src="./img/me.jpg" style={{ width: "100%" }}/> */}
+            {/* <img src="./img/me.jpg" alt="me" style={{ width: "100%" }}/> */}
             <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="rocks" style={{ width: "100%" }}/>
             <img src="https://www.w3schools.com/w3images/sound.jpg" alt="sound"  style={{ width: "100%" }}/>
             <img src="https://www.w3schools.com/w3images/woods.jpg" alt="woods"  style={{ width: "100%" }}/>
